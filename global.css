@@ -81,8 +81,9 @@
 
 html,
 body {
-  max-width: 100vw;
+  min-width: 100vw;
   overflow-x: hidden;
+  background-color: black !important;
 }
 
 body {
@@ -103,5 +104,22 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+body {
+  font-size: 14px;
+}
+
+/* Responsive font sizes for different screen sizes */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
   }
 }
